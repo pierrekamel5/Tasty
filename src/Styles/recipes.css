@@ -1,0 +1,21 @@
+.customCard {
+    -webkit-transition: padding 2s;
+  }
+  .customCard:hover{
+    opacity: 0.8;
+    transition: 1500ms ;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 35px;
+  }
+  .recipetitle {
+    font-weight: bold;
+    font-size: large;
+  }
+  .recipecard:hover {
+    opacity: 0.6;
+    transition: 750ms ;
+  }
+  .backicon:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }

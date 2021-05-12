@@ -1,0 +1,19 @@
+.pickyourpayment{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.10);
+}
+.paymentPage {
+    background-color:#dfe9f0;
+}
+.support {
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.10);
+    text-align: center;
+    font-weight: bold;
+}

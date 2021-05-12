@@ -1,0 +1,19 @@
+.authentication__header {
+  color: white;
+  text-align: center;
+}
+
+.authentication {
+  max-width: 25rem;
+  margin: auto;
+  text-align: center;
+}
+
+.authentication form {
+  margin-bottom: 1rem;
+}
+.googleLoginButton {
+  padding: 10px !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+}

@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f1f1f1;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #666;
+    line-height: 25px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  html{
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  }
+
+.section-footer {
+    background-color: rgb(245, 245, 245);
+    margin-top: 25px;
+      
+}
+
+.socialMedia {
+    color: rgb(255, 255, 255);
+    
+}
+.socialMedia:hover {
+    color: gray;
+    background-color: transparent;
+}
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+.fa {
+    font-size: 25px;
+    margin-left: 20px;
+}
+a:hover {
+    background-color: transparent;
+}
+footer{
+	background-color: #202020;
+	padding: 20px 15px;
+	overflow: hidden;
+}
+
+footer .footer-containertent{
+	text-align: center;
+}
+
+footer .footer-logo{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+footer p{
+	color: #828282;
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+
+footer ul {
+	display: inline-block;
+}
+
+footer ul li{
+	float: left;
+	margin-right: 15px;
+}
+
+footer ul li:last-child{
+	margin-right: 0;
+}
+
+footer ul li a{
+	font-size: 18px;
+}
+
+footer ul li a i{
+	font-size: 21px;
+	color: #BCBCBC;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.footer-container {
+	background-color: #000000;
+	padding: 60px 30px;
+}
+.footer-container a {
+	color: #999;
+}
+.footer-container a:hover {
+	opacity: 0.6;
+}
+.footer-container ul li {
+	color: #949494;
+	padding-top: 8px;
+}
+
+.footer-container ul li i{
+	margin-right: 10px;
+	font-size: 20px;
+}
+.footer-social-info:hover li:hover{
+	background-color: transparent;
+}
+.logo{
+	font-family: 'Acme', sans-serif;
+	
+} 
+
+
+ 
+
+
