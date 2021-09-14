@@ -40,14 +40,15 @@ async function getRestaurant(id) {
   return await axios.get(url).then(response => response.data);
 }
 
-async function addToCart(id,pid,productName,productPrice,productImg) {
+async function addToCart(id,pid,productName,productPrice,productImg,productQuantity) {
   const url = `${baseURLApi}/orders`;
   return await axios.post(`${url}/addToCart`,
   {"userId":id,
   "productId": pid,
   "productName":productName,
    "productPrice":productPrice,
-  "productImg":productImg})
+  "productImg":productImg,
+"quantity": productQuantity})
       .then(response => response.data);
 
 }

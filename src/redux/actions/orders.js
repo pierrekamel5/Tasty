@@ -16,12 +16,12 @@ export const MAKE_PAYMENT_STARTED = 'MAKE_PAYMENT_STARTED'
 export const MAKE_PAYMENT_SUCCESS = 'MAKE_PAYMENT_SUCCESS'
 export const MAKE_PAYMENT_ERROR = 'MAKE_PAYMENT_ERROR'
 const ordersActions = {
-    addtoCart: (userId,productId,productName,productDiscountedPrice,productImg) => async (dispatch) => {
+    addtoCart: (userId,productId,productName,productDiscountedPrice,productImg, productQuantity) => async (dispatch) => {
         try {
           dispatch({
             type: ADD_TO_CART_STARTED,
           });
-          let response = await addToCart(userId,productId,productName,productDiscountedPrice,productImg)
+          let response = await addToCart(userId,productId,productName,productDiscountedPrice,productImg, productQuantity)
           dispatch({
             type: ADD_TO_CART_SUCCESS,
             payload: {

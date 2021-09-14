@@ -34,7 +34,8 @@ const RestaurantMenu = () => {
         product._id,
         product.name,
         product.price,
-        product.productImg
+        product.productImg,
+        product.quantity
       )
     );
   };

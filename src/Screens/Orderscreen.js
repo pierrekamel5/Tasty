@@ -52,16 +52,13 @@ function OrdersScreen(props) {
         <div className="col-md-6">
          
            <div>{loadedOrders.map(cart=> {
-             return (<div className="container"><div className="row"   key={cart.id} > 
-              <div className="row">
-                <div className="col-lg-10 cart"  style={{backgroundColor:"white",margin:"15px"}}>
-                  <div className="mb-6" style={{padding:"15px"}}>
-                    <div >
-                      <div className="row mb-4">
+             return (
+              <div className="row" style={{width:"100%"}} key={cart.id} >
+                <div style={{backgroundColor:"white",margin:"25px", padding:"25px 80px"}}>
+                      <div className="row mb-4"  style={{padding:"15px"}}>
                         <div className="col-md-5 col-lg-3 col-xl-3">
                           <div className="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                            <img className="img-fluid w-100 imagss"  src={`http://localhost:5000/uploads/images/${cart.productImg}`}
-                             style={{height:"80px",width:"150px"}}/>
+                            <img  style={{height:"5rem", width:"20rem"}} src={`http://localhost:5000/uploads/images/${cart.productImg}`}/>
                           </div>
                         </div>
                         <div className="col-md-7 col-lg-9 col-xl-9">
@@ -76,16 +73,12 @@ function OrdersScreen(props) {
                             <div className="d-flex justify-content-between align-items-center">
                               
                               <p className="mb-0"><span><strong>{cart.totalprice} L.L</strong></span></p>
-                              <div className="removeCartButton">
+                              <div >
                                 <button className="btn btn-danger"  style={{float:"right",textAlign:"right"}} onClick={()=>removeFromCartHandler(cart)}>Remove Item</button>
                               </div>
                             </div>
-                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
             </div>
             </div>
             </div>)
