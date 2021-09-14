@@ -3,7 +3,7 @@ const User = require('../models/user');
 const Payment = require('../models/order');
 const HttpError = require('../models/http-error');
 const addToCart = async (req, res, next) => {
-    const { userId, productId, productName, productPrice, productImg } = req.body;
+    const { userId, productId, productName, productPrice, productImg, quantity } = req.body;
     User.findOne({ _id: userId }, (err, userInfo) => {
      
         let duplicate = false;
@@ -36,7 +36,7 @@ const addToCart = async (req, res, next) => {
                             id: productId,
                             productName: productName,
                             productPrice: productPrice,
-                            quantity: 1,
+                            quantity: quantity,
                             productImg: productImg,
                             totalprice:  productPrice,
                             date: Date.now()
